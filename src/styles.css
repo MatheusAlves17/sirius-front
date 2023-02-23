@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Poppins', sans-serif;}
+input,
+select,
+option{
+appearance: none;
+    outline: none;
+    background: transparent;
+    border: none;
+    font-size: 0.75rem;
+    color: #272727;
+
+    width: 18rem;
+    height: 2rem;
+}
+.input-with-icon{
+    border-bottom: 1px solid #B0B0B0;
+    /* border-radius: 0.375rem; */
+    margin-top: 0.875rem;
+
+    width: 18.75rem;
+    height: 2.188rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
