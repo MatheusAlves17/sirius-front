@@ -1,31 +1,38 @@
-<section>
-  <h1 class="title">Bom te ver,<br>faça login e aproveite!</h1>
-  <div class="form">
-    <div class="input-with-icon">
-      <img
-        src="../../../../assets/img/email.svg"
-        alt="Digite seu email"
-        class="email"
-      />
+<h1>Bom te ver!</h1>
+<div mat-dialog-content class="form">
+  <form (ngSubmit)="submit()" [formGroup]="signInForm" #formDir="ngForm">
+    <div class="input">
+      <img src="../../../../assets/img/email.svg" alt="Digite a senha" class="email">
       <input
-        type="email"
-        name="email"
-        id="email"
-        placeholder="Digite seu e-mail"
+      formControlName="email"
+      placeholder="Informe o email"
+      type="email"
+      name="email"
+      id="email"
+      required
       />
     </div>
-    <div class="input-with-icon">
-      <img
-        src="../../../../assets/img/password.svg"
-        alt="Digite sua senha"
-        class="password"
-      />
+    <div class="error-validate" *ngIf="email.invalid && formDir.submitted">
+      <p>E-mail inválido</p>
+    </div>
+    <div class="input">
+      <img src="../../../../assets/img/password.svg" alt="Digite a senha" class="password">
       <input
-        type="password"
-        name="password"
-        id="password"
-        placeholder="Digite sua senha"
+      formControlName="password"
+      placeholder="Informe a senha"
+      type="password"
+      name="password"
+      id="password"
+      required
       />
     </div>
-  </div>
-</section>
+    <div class="error-validate" *ngIf="password.invalid && formDir.submitted">
+      <p>Senha inválida</p>
+    </div>
+    <input type="submit" value="Entrar" class="btn-gray">
+  </form>
+</div>
+<p>ou</p>
+<p>
+  <a href="#">Faça seu cadastro e aproveite!</a>
+</p>
