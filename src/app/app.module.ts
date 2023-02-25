@@ -15,6 +15,7 @@ import { SigninComponent } from './views/authentication/signin/signin.component'
 import { TemplateComponent } from './views/authentication/template/template.component';
 import { NavbarComponent } from './views/shared/navbar/navbar.component';
 import { HomeComponent } from './views/home/home.component';
+import { ProductDetailComponent } from './views/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HomeComponent } from './views/home/home.component';
     SigninComponent,
     TemplateComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
