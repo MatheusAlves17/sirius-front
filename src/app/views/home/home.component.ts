@@ -15,7 +15,6 @@ export class HomeComponent implements OnInit{
   goToProduct(){
     console.log('navega');
     this.router.navigate(['/detalhes-produto']);
-
   }
 }
 

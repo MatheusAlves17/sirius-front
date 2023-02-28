@@ -16,6 +16,8 @@ import { TemplateComponent } from './views/authentication/template/template.comp
 import { NavbarComponent } from './views/shared/navbar/navbar.component';
 import { HomeComponent } from './views/home/home.component';
 import { ProductDetailComponent } from './views/product-detail/product-detail.component';
+import { ShoppingComponent } from './views/shopping/shopping.component';
+import { ExchangeComponent } from './views/exchange/exchange.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ProductDetailComponent } from './views/product-detail/product-detail.co
     TemplateComponent,
     NavbarComponent,
     HomeComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    ShoppingComponent,
+    ExchangeComponent
   ],
   imports: [
     BrowserModule,

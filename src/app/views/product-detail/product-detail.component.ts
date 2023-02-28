@@ -13,4 +13,8 @@ export class ProductDetailComponent implements OnInit{
 
   ngOnInit(): void {
   }
+  goToShopping(){
+    console.log('navega');
+    this.router.navigate(['/compra']);
+  }
 }

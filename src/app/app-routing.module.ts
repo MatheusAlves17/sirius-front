@@ -7,6 +7,8 @@ import { SigninComponent } from './views/authentication/signin/signin.component'
 import { NavbarComponent } from './views/shared/navbar/navbar.component';
 import { HomeComponent } from './views/home/home.component';
 import { ProductDetailComponent } from './views/product-detail/product-detail.component';
+import { ShoppingComponent } from './views/shopping/shopping.component';
+import { ExchangeComponent } from './views/exchange/exchange.component';
 
 
 const routes: Routes = [
@@ -15,7 +17,9 @@ const routes: Routes = [
   // { path: 'signin', component: SigninComponent },
   {path: '', component: NavbarComponent, children: [
     {path: '', component: HomeComponent},
-    {path: 'detalhes-produto', component: ProductDetailComponent}
+    {path: 'detalhes-produto', component: ProductDetailComponent},
+    {path: 'compra', component: ShoppingComponent},
+    {path: 'troca', component: ExchangeComponent}
   ]}
 ];
 
